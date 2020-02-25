@@ -1,0 +1,333 @@
+html {
+    margin: 0;
+    overflow-x: hidden;   
+}
+
+body {
+    font-family: 'Odibee Sans',serif ;    
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(red, yellow);
+}
+
+.screenOVERLAY {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(red, yellow);
+    opacity: .3;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0);
+    border: black solid 1px;
+ 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* TOOLBOX */
+.underLine {
+    text-decoration: underline;
+}
+.textCENTER {   
+    text-align: right;    
+}
+
+.textRight {
+    text-align: right;
+}
+
+.navHeight {
+    height: 3vh;
+}
+
+.FIVEvh {
+    font-size: 5vh;
+}
+
+.BGopacity {
+    background-color: rgba(255, 255, 255, .9);
+    position: absolute;
+    top:6%;
+    left: -140%;
+    /* transform: translate(-50%, -50%); */
+}
+
+h3 {
+    font-size: 4vh;
+}
+
+/* TOOLBOX */
+
+/* NAV */
+.navBars {
+    color: white;
+    border-bottom: white 2px solid;
+    height: 6vh;
+    width: 100vw;
+    background-color: rgb(52,58,64);
+    z-index: 5;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navBANKword {
+    font-size: 3vh;
+    width: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.dollarSIGN {
+    font-size: 4vh;
+    width: 4vw;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+
+#bankACC {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 4vh;
+    color: white;
+    text-align: left;
+    height: 5vh;
+    width: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
+
+#navWAGword {
+    font-size: 3vh;
+    width: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.dollarSIGN2 {
+    font-size: 4vh;
+    width: 4vw;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+#currWager {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 4vh;
+    color: white;
+    text-align: left;
+    height: 5vh;
+    width: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+}
+
+.navBTN {
+    font-size: 2vh;
+    width: 5vw;
+    height: 4vh;
+    margin: auto 1vw;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.NAVvertCENTER {
+    font-size: 4vh;
+    position: relative;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#chosenNUMBOX {
+    border: black 5px solid;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#chosenNUM {
+    font-size: 5vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: white 1px solid;
+    color: white;
+    text-align: center;
+    width: 10vh;
+    height: 10vh;
+    padding: 2vh;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* NAV */
+
+/* MODAL */
+
+#balanceINPUT {
+    font-size: 3vh;
+    width: 100%;
+}
+
+#wagerINPUT {
+    font-size: 3vh;
+    width: 100%;
+}
+
+#FIXED {    
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    font-size: 10vh;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CIRCLE {
+    width: 32vh;
+    height: 32vh;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    background-image: url(https://thumbs.gfycat.com/DentalBlaringChimpanzee-size_restricted.gif);
+    background-size: cover;
+    border: black solid 5px;
+    border-radius: 100%;
+    z-index: 4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spinBG {
+    background-image: url(https://media0.giphy.com/media/26uflBhaGt5lQsaCA/giphy.gif);
+}
+
+.loserBOX {
+    display: none;
+    width: 60vw;
+    height: 50vh;
+    border: black solid 1px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    box-shadow: 5px 10px;
+}
+
+.loserGIF {
+    background-image: url(https://media2.giphy.com/media/mcH0upG1TeEak/giphy.gif);
+    background-size: cover;
+}
+
+#SPIN {
+    position: absolute;
+    width: 60vw;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#spinner {
+    font-size: 5vh;
+    width: 100%;
+}
+
+.spinCountBox {
+    color: white;
+    border: white solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#spinCOUNT {
+    font-size: 4vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boardBOX {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trackerBOX {
+    font-size: xx-large;
+    text-align: center;
+    height: 30vh;
+    width: 30vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.statTable {
+    /* display: none; */
+    text-align: center;
+    font-size: 3vh;    
+    width: 12vw;
+    height: 94vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 6%;
+    left: 0%;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/board.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/032ba08815.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="screen">
+        <div class="navBars">
+            <h5 id="navBANKword">BANK: </h5>
+            <h5 class="dollarSIGN">$</h5>
+            <input class="form-control form-control-lg" id="bankACC" type="text" placeholder="00" value="0" readonly>
+
+            <h5 id="navWAGword">WAGER:</h5>
+            <h5 class="dollarSIGN2">$</h5>
+            <input class="form-control form-control-lg" id="currWager" type="text" placeholder="00" value="0" readonly>
+            
+            <button type="button" class="btn btn-outline-secondary navBTN" id="hideTable"><i class="fas fa-plus-circle"></i></button>
+            <button type="button" class="btn btn-outline-success navBTN" data-toggle="modal"
+                data-target="#exampleModalCenter" id="change">CHANGE</button>
+            <button type="button" class="btn btn-outline-danger navBTN" id="test">RESET</button>
+        </div>
+
+        <div class="CIRCLE">
+            <input class="form-control " id="FIXED" type="text" placeholder="Readonly input here..." value="0" readonly>
+        </div>
+
+        <div class="spinCountBox">
+            <div class="spinCOUNT">
+                <h5>SPIN COUNT</h5>
+                <h3 id="spinCOUNT">0</h3>
+            </div>
+        </div>
+
+        <div>
+            <input class="form-control form-control-lg" id="chosenNUM" type="text" placeholder="00" value="00" readonly>
+        </div>
+
+        <div id="SPIN">
+            <button type="button" class="btn btn-outline-danger" id="spinner">SPIN</button>
+        </div>
+
+        <div class="box">
+            <button type="button" class="btn btn-success board boardBTNsZEROs" id="z00">00</button>
+            <button type="button" class="btn btn-success board boardBTNsZEROs" id="z0">0</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL1" id="z03">3</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL1" id="z02">2</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW3 BCOL1" id="z01">1</button>
+
+            <button type="button" class="btn btn-dark board boardBTNs BROW1 BCOL2" id="z06">6</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW2 BCOL2" id="z05">5</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW3 BCOL2" id="z04">4</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL3" id="z09">9</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL3" id="z08">8</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW3 BCOL3" id="z07">7</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL4" id="z12">12</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL4" id="z11">11</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW3 BCOL4" id="z10">10</button>
+
+            <button type="button" class="btn btn-dark board boardBTNs BROW1 BCOL5" id="z15">15</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW2 BCOL5" id="z14">14</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW3 BCOL5" id="z13">13</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL6" id="z18">18</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL6" id="z17">17</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW3 BCOL6" id="z16">16</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL7" id="z21">21</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL7" id="z20">20</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW3 BCOL7" id="z19">19</button>
+
+            <button type="button" class="btn btn-dark board boardBTNs BROW1 BCOL8" id="z24">24</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW2 BCOL8" id="z23">23</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW3 BCOL8" id="z22">22</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL9" id="z27">27</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL9" id="z26">26</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW3 BCOL9" id="z25">25</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL10" id="z30">30</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL10" id="z29">29</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW3 BCOL10" id="z28">28</button>
+
+            <button type="button" class="btn btn-dark board boardBTNs BROW1 BCOL11" id="z33">33</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW2 BCOL11" id="z32">32</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW3 BCOL11" id="z31">31</button>
+
+            <button type="button" class="btn btn-danger board boardBTNs BROW1 BCOL12" id="z36">36</button>
+            <button type="button" class="btn btn-dark board boardBTNs BROW2 BCOL12" id="z35">35</button>
+            <button type="button" class="btn btn-danger board boardBTNs BROW3 BCOL12" id="z34">34</button>
+        </div>
+
+        <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content BGopacity">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>BALANCE</h3>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="balanceINPUT" placeholder="BALANCE"
+                                aria-label="Recipient's username" aria-describedby="button-addon2" value="114.00">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" id="balBTN" type="button"
+                                    id="button-addon2">CHANGE</button>
+                            </div>
+                        </div>
+                        <H3>WAGER</H3>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="wagerINPUT" placeholder="WAGER"
+                                aria-label="Recipient's username" aria-describedby="button-addon2" value="3.00">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" id="wageBTN" type="button"
+                                    id="button-addon2">CHANGE</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trackerBOX">
+            <div id="tracker"></div>
+        </div>
+
+        <div class="loserBOX loserGIF"></div>
+
+        <div class="SO"></div>
+
+        <div class="statTable">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">HITs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">0</th>
+                        <td id="t0">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">00</th>
+                        <td id="t00">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">01</th>
+                        <td id="t01">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">02</th>
+                        <td id="t02">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03</th>
+                        <td id="t03">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">04</th>
+                        <td id="t04">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">05</th>
+                        <td id="t05">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">06</th>
+                        <td id="t06">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">07</th>
+                        <td id="t07">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">08</th>
+                        <td id="t08">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">09</th>
+                        <td id="t09">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td id="t10">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td id="t11">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td id="t12">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td id="t13">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td id="t14">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td id="t15">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td id="t16">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td id="t17">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td id="t18">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19</th>
+                        <td id="t19">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td id="t20">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td id="t21">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">22</th>
+                        <td id="t22">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">23</th>
+                        <td id="t23">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">24</th>
+                        <td id="t24">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">25</th>
+                        <td id="t25">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">26</th>
+                        <td id="t26">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">27</th>
+                        <td id="t27">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">28</th>
+                        <td id="t28">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">29</th>
+                        <td id="t29">00</td>
+                    </tr>                 
+                    <tr>
+                        <th scope="row">30</th>
+                        <td id="t30">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">31</th>
+                        <td id="t31">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">32</th>
+                        <td id="t32">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">33</th>
+                        <td id="t33">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">34</th>
+                        <td id="t34">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">35</th>
+                        <td id="t35">00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">36</th>
+                        <td id="t36">00</td>
+                    </tr>
+                    
+
+                 </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/board.js"></script>
+</body>
+
+</html>
