@@ -307,12 +307,13 @@ checkWIN = () => {
     t34EL.innerHTML = stat34.length;
     t35EL.innerHTML = stat35.length;
     t36EL.innerHTML = stat36.length;
+
+    FIXhistory.unshift(FIX);
     
     if (NUM === FIX) {
         var WnBAL = parseFloat(BAL) + parseFloat(WAG) * 36;
         bankACCEL.value = WnBAL.toFixed(2);
-        circleEL.classList.remove('spinBG');
-        FIXhistory.unshift(FIX);
+        circleEL.classList.remove('spinBG');        
 
         var text = "";
         for (var i = 0; i < FIXhistory.length; i++) {
@@ -326,7 +327,7 @@ checkWIN = () => {
     } else {
         var LnBAL = parseFloat(BAL) - parseFloat(WAG);
         bankACCEL.value = LnBAL.toFixed(2);
-        FIXhistory.push(FIX);
+        
 
         if (LnBAL <= 0) {
             LOSER();
