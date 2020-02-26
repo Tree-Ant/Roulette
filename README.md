@@ -26,7 +26,7 @@ Although the main focus of the application is the auotmatically calculated wager
 ## PREVIEW
 
 ---
-![ROULETTE GIF](/assets/img/RouletteGame.gif)
+![ROULETTE GIF](/assets/img/rouletteGame.gif)
 
 ## Future Dev
 
