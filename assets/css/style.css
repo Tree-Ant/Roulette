@@ -331,3 +331,343 @@ h3 {
     top: 6%;
     left: 0%;
 }
+
+@media only screen and (max-width: 850px) {
+    html {
+        margin: 0;
+        overflow-x: hidden;   
+    }
+    
+    body {
+        font-family: 'Odibee Sans',serif ;    
+    }
+    
+    .screen {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(red, yellow);
+        
+    }
+    
+    .screenOVERLAY {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(red, yellow);
+        opacity: .3;
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0); 
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0);
+        border: black solid 1px;
+     
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    
+    /* TOOLBOX */
+    .underLine {
+        text-decoration: underline;
+    }
+    .textCENTER {   
+        text-align: right;    
+    }
+    
+    .textRight {
+        text-align: right;
+    }
+    
+    .navHeight {
+        height: 3vh;
+    }
+    
+    .FIVEvh {
+        font-size: 5vh;
+    }
+    
+    .BGopacity {
+        background-color: rgba(255, 255, 255, .9);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    h3 {
+        font-size: 4vh;
+    }
+    
+    /* TOOLBOX */
+    
+    /* NAV */
+    .navBars {
+        color: white;
+        border-bottom: white 2px solid;
+        height: 8vh;
+        width: 100vw;
+        background-color: rgb(52,58,64);
+        z-index: 5;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        overflow: hidden;
+    }
+    
+    #navBANKword {
+        font-size: 3vh;
+        width: 15vw;
+        position: absolute;
+        top: 25%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+ 
+    .dollarSIGN {
+        font-size: 3vh;
+        width: 4vw;
+        position: absolute;
+        top: 25%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #bankACC {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        font-size: 3vh;
+        color: white;
+        text-align: left;
+        height: 5vh;
+        width: 40vw;
+        position: absolute;
+        top: 25%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #navWAGword {
+        font-size: 3vh;
+        width: 15vw;
+        position: absolute;
+        top: 75%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .dollarSIGN2 {
+        font-size: 3vh;
+        width: 4vw;
+        position: absolute;
+        top: 75%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #currWager {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        font-size: 3vh;
+        color: white;
+        text-align: left;
+        height: 5vh;
+        width: 40vw;
+        position: absolute;
+        top: 75%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .navBTN {
+        font-size: 2vh;
+        width: 18vw;
+        height: 4vh;
+        margin: auto ;
+        position: relative;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .NAVvertCENTER {
+        font-size: 4vh;
+        position: relative;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #chosenNUMBOX {
+        border: black 5px solid;
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #chosenNUM {
+        font-size: 5vh;
+        background-color: rgba(0, 0, 0, 0);
+        border: black 5px solid;
+        color: white;
+        text-align: center;
+        width: 25vw;
+        height: 24vh;
+        padding: 2vh;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    /* NAV */
+    
+    /* MODAL */
+    
+    #balanceINPUT {
+        font-size: 3vh;
+        width: 100%;
+    }
+    
+    #wagerINPUT {
+        font-size: 3vh;
+        width: 100%;
+    }
+    
+    #FIXED {    
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+        font-size: 10vh;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .CIRCLE {
+        width: 50vw;
+        height: 32vh;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: green;
+        background-image: url(https://thumbs.gfycat.com/DentalBlaringChimpanzee-size_restricted.gif);
+        background-size: cover;
+        border: black solid 5px;
+        border-radius: 0%;
+        z-index: 4;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .spinBG {
+        /* background-image: url(https://media0.giphy.com/media/26uflBhaGt5lQsaCA/giphy.gif); */
+    }
+    
+    .loserBOX {
+        display: none;
+        width: 96vw;
+        height: 48vw;
+        border: black solid 1px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+        box-shadow: 5px 10px;
+    }
+    
+    .loserGIF {
+        background-image: url(https://media2.giphy.com/media/mcH0upG1TeEak/giphy.gif);
+        background-size: cover;
+    }
+    
+    #SPIN {
+        position: absolute;
+        width: 60vw;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #spinner {
+        font-size: 5vh;
+        width: 100%;
+    }
+    
+    .spinCountBox {
+        color: white;
+        border: black solid 5px;
+        border-radius: 0px;
+        text-align: center;
+        height: 24vh;
+        width: 25vw;
+        position: absolute;
+        top: 30%;
+        left: 87%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #spinCOUNT {
+        font-size: 4vh;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .boardBOX {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .trackerBOX {
+        font-size: xx-large;
+        text-align: center;
+        height: 20vh;
+        width: 8vh;
+        overflow-y: scroll;
+        position: absolute;
+        top: 85%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .statTable {
+        /* display: none; */
+        text-align: center;
+        font-size: 3vh;    
+        width: 31vw;
+        height: 20vh;
+        overflow-y: scroll;
+        position: absolute;
+        top: 76%;
+        left: 0%;
+    }
+
+
+
+  }

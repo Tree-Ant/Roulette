@@ -95,3 +95,106 @@
 .BCOL12 {
     left: 1200px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    /* BOARD */
+    
+    .box {
+        
+        height: 180px;  
+        width: 95%;  
+        contain: content;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-x: scroll;
+    }
+    
+    .boardBTNs {
+        font-size: 3.5vh;
+        height:50px;
+        width: 50px;
+        border: white solid 1px;
+        font-weight: bolder;
+    }
+    
+    .boardBTNsZEROs {
+        font-size: 3.5vh;
+        height:75px;
+        width: 50px;
+        border: white solid 1px;
+        font-weight: bolder;
+            
+    }
+    
+    #z00 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-top-left-radius: 25%;
+    
+    }
+    
+    #z0 {
+        position: absolute;
+        top: 75px;
+        left: 0px;
+        border-bottom-left-radius: 25%;
+    }
+    
+    .BROW1 {
+        position: absolute;
+        top: 0px;
+    }
+    
+    .BROW2 {
+        position: absolute;
+        top: 50px;
+    }
+    
+    .BROW3 {
+        position: absolute;
+        top: 100px;
+    }
+    
+    .BCOL1 {
+        left: 50px;
+    }
+    
+    .BCOL2 {
+        left: 100px;
+    }
+    .BCOL3 {
+        left: 150px;
+    }
+    .BCOL4 {
+        left: 200px;
+    }
+    .BCOL5 {
+        left: 250px;
+    }
+    .BCOL6 {
+        left: 300px;
+    }
+    .BCOL7 {
+        left: 350px;
+    }
+    .BCOL8 {
+        left: 400px;
+    }
+    .BCOL9 {
+        left: 450px;
+    }
+    .BCOL10 {
+        left: 500px;
+    }
+    .BCOL11 {
+        left: 550px;
+    }
+    .BCOL12 {
+        left: 600px;
+    }
+    
+    }
