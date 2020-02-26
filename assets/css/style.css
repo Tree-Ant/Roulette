@@ -404,7 +404,7 @@ h3 {
         position: absolute;
         top:50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: tran slate(-50%, -50%);
     }
     
     h3 {
@@ -657,7 +657,7 @@ h3 {
     }
     
     .statTable {
-        /* display: none; */
+        display: none;
         text-align: center;
         font-size: 3vh;    
         width: 31vw;
